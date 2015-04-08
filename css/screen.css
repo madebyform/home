@@ -30,10 +30,12 @@ a:hover {
 .content {
   padding: 50px 30px 20px;
 }
+.container, .content {
+  max-width: 640px;
+}
 .container {
   height: 100%;
   margin: 0 auto;
-  max-width: 640px;
   padding: 0;
   width: 100%;
   display: -webkit-box;
