@@ -29,7 +29,7 @@ activate :blog do |blog|
 end
 
 # Configure RSS
-# page "/feed.xml", layout: false
+page "/feed.xml", layout: false
 
 # Markdown configs
 set :markdown_engine, :redcarpet
