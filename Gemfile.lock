@@ -9,6 +9,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     backports (3.6.4)
+    bourbon (3.2.3)
+      sass (~> 3.2)
+      thor
     celluloid (0.16.0)
       timers (~> 4.0.0)
     compass-import-once (1.0.5)
@@ -105,6 +108,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   middleman-cli
   middleman-core
   middleman-livereload

@@ -1,9 +1,11 @@
 @charset "utf-8";
+@import "bourbon";
 @import "normalize";
 
 html, body {
   height: 100%;
 }
+
 body.index {
   -webkit-font-smoothing: antialiased;
   background: #1d143e;
@@ -12,50 +14,46 @@ body.index {
   font-size: 20px;
   text-align: center;
 }
+
 p {
   line-height: 1.5em;
 }
+
 a {
   border-bottom: 2px solid rgba(255,255,255,.2);
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    border-color: currentColor;
+  }
 }
-a:hover {
-  border-color: currentColor;
-}
+
 .logo {
   margin-bottom: 20px;
   width: 80%;
   max-width: 350px;
   max-height: 126px;
 }
-.content {
-  padding: 50px 30px;
-}
-.container, .content {
-  max-width: 640px;
-}
+
 .container {
   height: 100%;
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-ordinal-group: 1;
-  -moz-box-ordinal-group: 1;
-  box-ordinal-group: 1;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  box-flex: 1;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
+
+  @include display-box;
+  @include box-ordinal-group(1);
+  @include box-flex(1);
+  @include box-orient(horizontal);
+  @include box-pack(center);
+  @include box-align(center);
+}
+
+.container, .content {
+  max-width: 640px;
+}
+
+.content {
+  padding: 50px 30px;
 }

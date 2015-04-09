@@ -13,3 +13,6 @@ gem 'middleman-core'
 gem 'middleman-cli'
 gem 'middleman-sprockets'
 gem 'middleman-livereload'
+
+# Others
+gem 'bourbon' # A simple and lightweight mixin library for Sass
