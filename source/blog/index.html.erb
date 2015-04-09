@@ -2,8 +2,12 @@
 pageable: false
 ---
 
-<ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-  <% end %>
-</ul>
+<div class="Blog">
+  <nav class="Blog-archive">
+    <ul>
+      <% page_articles.each_with_index do |article, i| %>
+        <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+      <% end %>
+    </ul>
+  </nav>
+</div>
