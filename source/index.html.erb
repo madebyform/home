@@ -1,7 +1,3 @@
----
-title: Made by Form
----
-
 <div class="Homepage">
   <div class="Homepage-content">
     <!--[if lte IE 8]><%= image_tag "logo.png", alt: "Made by Form", class: "Homepage-logo" %><![endif]-->
@@ -11,9 +7,10 @@ title: Made by Form
       Our expertise lies in web application and iOS development, user experience design and research.
     </p>
     <ul class="Homepage-links">
-      <li><a href="mailto:hello@madebyform.com">Email</a></li>
-      <li><a href="https://twitter.com/madebyform">@madebyform</a></li>
-      <li><a href="https://github.com/madebyform">GitHub</a></li>
+      <li><%= link_to "Blog", "/blog" %></li>
+      <li><%= link_to "@madebyform", "https://twitter.com/madebyform" %></li>
+      <li><%= link_to "GitHub", "https://github.com/madebyform" %></li>
+      <li><%= link_to "Email", "mailto:hello@madebyform.com" %></li>
     </ul>
   </div>
 </div>
