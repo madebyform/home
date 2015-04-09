@@ -31,6 +31,14 @@ end
 # Configure RSS
 # page "/feed.xml", layout: false
 
+# Markdown configs
+set :markdown,
+  no_intra_emphasis: true, # Do not parse emphasis inside of words (eg: "foo_bar_baz")
+  fenced_code_blocks: true, # Parse fenced code blocks
+  strikethrough: true, # Parse strikethrough (eg: "this is ~~good~~ bad")
+  space_after_headers: true, # A space is required between the hash at the beginning of a header
+  smartypants: true # Use smart typograhic punctuation for things like quotes and dashes
+
 ###
 # Page options, layouts, aliases and proxies
 ###
