@@ -9,11 +9,11 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman-core', '>= 4.0.0.alpha.6'
+gem 'middleman-core'
 gem 'middleman-cli'
 gem 'middleman-sprockets'
 gem 'middleman-livereload'
-gem 'middleman-blog', '>= 3.6.0.beta.2'
+gem 'middleman-blog'
 
 # Others
 gem 'bourbon' # A simple and lightweight mixin library for Sass
