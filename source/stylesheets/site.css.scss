@@ -1,14 +1,15 @@
+@charset "utf-8";
+@import "normalize";
+
 html, body {
   height: 100%;
 }
-body {
+body.index {
   -webkit-font-smoothing: antialiased;
   background: #1d143e;
   color: #fdfdfd;
   font-family: Source Sans Pro, sans-serif;
   font-size: 20px;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 p {
@@ -29,7 +30,7 @@ a:hover {
   max-height: 126px;
 }
 .content {
-  padding: 50px 30px 20px;
+  padding: 50px 30px;
 }
 .container, .content {
   max-width: 640px;
