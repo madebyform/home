@@ -2,11 +2,12 @@
 @import "bourbon";
 @import "normalize";
 
-html, body {
+html.index,
+html.index body {
   height: 100%;
 }
 
-body.index {
+html.index body {
   -webkit-font-smoothing: antialiased;
   background: #1d143e;
   color: #fdfdfd;
