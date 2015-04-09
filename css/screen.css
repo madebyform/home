@@ -26,6 +26,7 @@ a:hover {
   margin-bottom: 20px;
   width: 80%;
   max-width: 350px;
+  max-height: 126px;
 }
 .content {
   padding: 50px 30px 20px;
