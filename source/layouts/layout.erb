@@ -19,5 +19,6 @@
     <%= yield %>
 
     <%= javascript_include_tag :all %>
+    <%= partial 'analytics' unless development? %>
   </body>
 </html>
