@@ -1,3 +1,8 @@
+html.blog body {
+  background-color: $primary-invert-color;
+  color: $primary-color;
+}
+
 html.blog_index body {
   // This page as dark background and light text
   background: #1d143e image-url("background.svg");
@@ -19,6 +24,7 @@ html.blog_index body {
  * Based on Ródão, a minimalist theme for Ghost (github.com/dmfrancisco/rodao).
  */
 .Blog {
+  font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 22px;
   margin: 0 auto;
@@ -35,7 +41,7 @@ html.blog_index body {
     font-size: 21px;
     line-height: 30px;
     max-width: 760px;
-    padding-top: 80px;
+    padding: 80px 30px 140px;
   }
 
   a {
@@ -46,13 +52,6 @@ html.blog_index body {
       border-color: currentColor;
     }
   }
-
-  // Base styles
-  font-family: $font-family-sans-serif;
-  color: #000;
-
-  // We use these as default color throughout
-  $grey: #efefef;
 
   // This is a matter of taste and can be safely removed
   -webkit-font-smoothing: antialiased;
@@ -147,7 +146,6 @@ html.blog_index body {
   }
 
   pre {
-    border: 1px solid $grey;
     box-sizing: border-box;
     font-size: 0.9em;
     margin: 1.6em 0;
@@ -180,10 +178,6 @@ html.blog_index body {
 
 .Blog-header {
   text-align: center;
-
-  a {
-    border-bottom: none !important; // Remove border from image link
-  }
 }
 
 .Blog-archive {
