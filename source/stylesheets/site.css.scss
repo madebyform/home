@@ -2,10 +2,62 @@
 @import "bourbon";
 @import "normalize";
 @import "variables";
+@import "utils";
 @import "homepage";
 @import "blog";
 @import "syntax";
 
-.u-noBorder {
-  border-bottom: none !important;
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+
+  // This is a matter of taste and can be safely removed
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  background-color: $primary-invert-color;
+  color: $primary-color;
+
+  a {
+    border-color: rgba($primary-color,.1);
+
+    &:hover {
+      border-color: rgba($primary-color,.6);
+    }
+  }
+}
+
+.body--dark {
+  background-color: $primary-color;
+  color: $primary-invert-color;
+
+  a {
+    border-bottom-color: rgba($primary-invert-color,.2);
+
+    &:hover {
+      border-color: inherit;
+    }
+  }
+}
+
+.body--withBackground {
+  background-image: image-url("background.svg");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  word-wrap: break-word;
+  transition: border-color 250ms;
+  border-bottom: 2px solid;
+
+  &:hover {
+    transition: border-color 50ms;
+  }
+  &, &:active, &:focus {
+    outline: none;
+  }
 }
