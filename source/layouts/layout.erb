@@ -8,6 +8,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= "#{ current_page.data.title } / " if current_page.data.title %>Made by Form</title>
 
+    <%= feed_tag :atom, '/feed.xml', :title => "Feed" %>
     <meta name="description" content="A consultancy working in the intersection of code and design." />
     <meta name="google-site-verification" content="kpCM-3HHl9GGgd3zKrC3Yl67AZVsY-i65KeszKEZgr0" />
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Source+Code+Pro:400,600" rel="stylesheet" type="text/css">
