@@ -151,8 +151,5 @@ DEPENDENCIES
   middleman-blog
   middleman-deploy
   middleman-livereload
-  middleman-sprockets
   middleman-syntax
   redcarpet
-  tzinfo-data
-  wdm (~> 0.1.0)
