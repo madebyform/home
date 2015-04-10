@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="<%= page_classes %>">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= "#{ current_page.data.title } / " if current_page.data.title %>Made by Form</title>
+
+    <%= feed_tag :atom, '/feed.xml', :title => "Feed" %>
+    <meta name="description" content="A consultancy working in the intersection of code and design." />
+    <meta name="google-site-verification" content="kpCM-3HHl9GGgd3zKrC3Yl67AZVsY-i65KeszKEZgr0" />
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Source+Code+Pro:400,600" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag :site %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <%= javascript_include_tag :all %>
+    <%= partial 'analytics' unless development? %>
+  </body>
+</html>

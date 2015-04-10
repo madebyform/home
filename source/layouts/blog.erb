@@ -1,0 +1,14 @@
+<% wrap_layout :layout do %>
+  <div class="Blog">
+    <article class="Blog-post">
+      <small class="Blog-post-date">
+        <%= current_article.date.strftime('%b %e, %Y') %>
+      </small>
+      <h1><%= current_article.title %></h1>
+
+      <%= yield %>
+
+      <%= link_to "Archive", "..", class: "Blog-archiveLink" %>
+    </article>
+  <div>
+<% end %>
