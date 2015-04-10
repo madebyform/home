@@ -78,6 +78,18 @@ end
 #   end
 # end
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host = 'madebyform.com'
+  deploy.path = '/home/madebyform/site/new'
+  deploy.user = 'madebyform'
+  deploy.build_before = true
+  deploy.flags = "-avz --chmod=Du=rwx,go=rx,Fu=rwx,go=rx"
+end
+
+# Since we're deploying to /new/ use relative links
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # Pretty URLs
@@ -91,4 +103,7 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
+
+  # Use relative URLs
+  activate :relative_assets
 end
