@@ -5,8 +5,8 @@ html.index body {
 
 html.index body {
   -webkit-font-smoothing: antialiased;
-  background: #1d143e;
-  color: #fdfdfd;
+  background: $primary-color;
+  color: $primary-invert-color;
   font-family: Source Sans Pro, sans-serif;
   font-size: 20px;
   text-align: center;
