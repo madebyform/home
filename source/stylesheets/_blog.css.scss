@@ -19,7 +19,7 @@
     font-size: 21px;
     line-height: 30px;
     max-width: 760px;
-    padding: 80px 30px 140px;
+    padding: 80px 30px 120px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -154,15 +154,26 @@
   }
 }
 
-.Blog-archive-date, .Blog-post-date {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.Blog-archive-date, .Blog-post-metadata {
   opacity: 0.2;
-  color: inherit;
+}
+
+.Blog-archive-date, .Blog-post-metadata-date {
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .Blog-archive-date {
   padding-right: 20px;
+}
+
+.Blog-post-metadata {
+  font-size: 80%;
+  margin-bottom: 4px;
+}
+
+.Blog-post-metadata-by {
+  padding: 0 4px;
 }
 
 .Blog-logo {

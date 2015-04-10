@@ -7,9 +7,17 @@
         <% end %>
       </div>
 
-      <small class="Blog-post-date">
-        <%= current_article.date.strftime('%b %e, %Y') %>
-      </small>
+      <div class="Blog-post-metadata">
+        <span class="Blog-post-metadata-date">
+          <%= current_article.date.strftime('%b %e, %Y') %>
+        </span>
+
+        <% if current_article.data.author %>
+          <span class="Blog-post-metadata-by">by</span>
+          <%= link_to current_article.data.author,
+            settings.authors[current_article.data.author] %>
+        <% end %>
+      </div>
 
       <h1><%= current_article.title %></h1>
 

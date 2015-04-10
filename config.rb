@@ -41,7 +41,6 @@ configure :build do
   activate :relative_assets
 end
 
-
 # Site deployment configuration
 activate :deploy do |deploy|
   deploy.method = :rsync
@@ -51,3 +50,8 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.flags = "-avz --chmod=Du=rwx,go=rx,Fu=rwx,go=rx"
 end
+
+# Authors information
+set :authors, {
+  "Hunter Thompson" => "https://en.wikipedia.org/wiki/Hunter_S._Thompson"
+}
